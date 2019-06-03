@@ -71,7 +71,7 @@ require = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({3:[function(require,module,exports) {
+})({5:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -90,7 +90,7 @@ exports.default = {
     });
   }
 };
-},{}],2:[function(require,module,exports) {
+},{}],4:[function(require,module,exports) {
 'use strict';
 
 var _redditapi = require('./redditapi');
@@ -162,7 +162,7 @@ function truncateString(myString, limit) {
   if (shortened == -1) return myString;
   return myString.substring(0, shortened);
 }
-},{"./redditapi":3}],4:[function(require,module,exports) {
+},{"./redditapi":5}],6:[function(require,module,exports) {
 
 var global = (1, eval)('this');
 var OldModule = module.bundle.Module;
@@ -184,7 +184,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '50723' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '52839' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -285,5 +285,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.require, id);
   });
 }
-},{}]},{},[4,2])
+},{}]},{},[6,4])
 //# sourceMappingURL=/dist/findit.map

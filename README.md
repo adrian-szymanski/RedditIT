@@ -1,4 +1,4 @@
 # RedditIT
 Reddit searcher
 
-Use parcel index.html in terminal to run project.
+Use parcel.js index.html in terminal to run project.
